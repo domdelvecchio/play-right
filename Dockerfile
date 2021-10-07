@@ -19,6 +19,9 @@ COPY package.json /app
 COPY package-lock.json /app
 RUN npm ci
 COPY . /app
+# create folders for test files and for results
+RUN mkdir test_files
+RUN mkdir test_results
 RUN DEBIAN_FRONTEND=noninteractive npx playwright install-deps
 RUN npx playwright install
 

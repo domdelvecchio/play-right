@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
     {
       name: 'myproject',
       // Look for test files in the "tests" directory, relative to this configuration file
-      testDir: './in'
+      testDir: './test_files'
     }
   ],
 
